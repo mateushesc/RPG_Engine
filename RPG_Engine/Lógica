@@ -1,9 +1,0 @@
-- Todas estratégias seguem mesmo padrão;
-- Vou tratar todos objetos como mesma entidade genérica, o que permite atacar qualquer coisa;
-- Execute recebe atributos do personagem, da arma, e da entidade genérica;
-- Ao atacar, o grupo entra em combate contra entidade;
-- É feita verificação se entidade atacada também é parte de um grupo, caso for, o grupo da entidade entra em combate;
-- Quando entidade fica com 0 ou menos de vida, ela é considerada morta;
-- Quando todas entidades de um grupo morrem, o grupo é considerado derrotado;
-- Entidades podem receber efeitos, eles podem ser decrementados cada turno, ou podem ser permanentes (só removido com item específico, ou feitiço);
-- 
