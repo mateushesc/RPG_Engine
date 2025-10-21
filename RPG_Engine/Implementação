@@ -1,0 +1,52 @@
+Implementação:
+- Criar pastas para menor confusão
+- Criar interfaces e classes abstratas
+- Decorator para implementação das passivas e características das classes
+- Tem que ser possível trocar de armas em batalha
+- Quando uma entidade é atacada, os dois grupos entram em batalha
+- Descobrir como implementar batalha, turnos e vitória ou derrota
+- Na classe de batalha do Java, criar uma função que checa os efeitos após cada turno.
+Entidades:
+- Tem classe (posse ser uma genérica)
+- Tem arma (pode ser uma genérica)
+- Tem grupo (pode ser vazio)
+- Quando ficar com 0 ou menos de vida, é considerado morto
+Classes:
+- Status específico (bonus status)
+- Limitações (exemplo só pode usar certo tipo de arma)
+- Tem certas passivas
+Armas:
+- Tem status
+- Tem passivas
+- Não vão ter durabilidade por enquanto
+Efeitos: # 
+- Sangramento (até usar curativo, ou feitiço específico)
+- Queimadura (diminui 1 por turno, dano aumenta com os stacks)
+- Atordoar (entidade perde turno, dimiinui 1 por turno)
+Tipos status: # Dentro das entidades
+- Com limite (exemplo vida e mana)
+- Sem limite (exemplo força e int)
+Tipos de armas: # Herança
+- Cajado
+- Adaga
+- Espada
+- Etc
+Tipos ataques: # Strategy
+- Criar ataque básico
+- Aitnge todos inimigos
+- Causa efeito de status tal
+- Multiplicador de dano
+Tipos passivas: # Decorator
+- Afeta calculo de dano (exemplo + 20% dano (1.2 multiplier))
+- Afeta status por turno (exemplo + 10 mana)
+- Chance de algo acontecer (exemplo esquiva)
+
+
+Abstracts:
+- GenericObject
+- GenericClass
+- GenericWeapon
+- GenericAttack
+- GenericEffect
+- GenericPassives
+- GenericGroup(solo)

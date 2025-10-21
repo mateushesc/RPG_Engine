@@ -1,0 +1,83 @@
+🧭 SOLID (5 princípios de design orientado a objetos)
+
+S – Single Responsibility: cada classe deve ter apenas uma responsabilidade.
+
+O – Open/Closed: aberto para extensão, fechado para modificação.
+
+L – Liskov Substitution: subclasses devem poder substituir suas superclasses sem quebrar o código.
+
+I – Interface Segregation: interfaces específicas, não gigantes — melhor vários contratos pequenos.
+
+D – Dependency Inversion: dependa de abstrações, não de implementações concretas.
+
+🧠 Did you know: esses princípios foram popularizados por Robert C. Martin, o “Uncle Bob”.
+
+🧬 Herança
+
+Permite que uma classe reutilize e estenda o comportamento de outra.
+👉 Exemplo: Cachorro herda de Animal e ganha comportamentos básicos automaticamente.
+
+🧠 Did you know: linguagens como Java não suportam herança múltipla de classes — apenas de interfaces.
+
+🌀 Polimorfismo
+
+Capacidade de um mesmo método se comportar de maneiras diferentes dependendo do objeto.
+👉 Exemplo: falar() pode emitir sons diferentes em Gato e Cachorro.
+
+🧠 Did you know: “polimorfismo” vem do grego e significa literalmente “muitas formas”.
+
+🏭 Factory (Factory Method)
+
+Fornece uma forma centralizada de criar objetos, escondendo a lógica de instância.
+👉 Em vez de usar new direto, você chama um método fábrica.
+
+🧠 Did you know: esse padrão é um dos mais usados em frameworks como Spring e Swing.
+
+🏢 Abstract Factory
+
+Cria famílias de objetos relacionados sem especificar suas classes concretas.
+👉 Ideal para criar grupos de objetos que devem funcionar juntos (ex: botões e janelas em diferentes SOs).
+
+🧠 Did you know: esse padrão evita dependência direta de classes específicas — super útil para portabilidade.
+
+🧍 Singleton
+
+Garante que existe apenas uma instância de uma classe e fornece acesso global a ela.
+👉 Exemplo: gerenciador de configurações ou conexão com banco.
+
+🧠 Did you know: é um dos padrões mais polêmicos — útil, mas mal usado pode virar “global mal disfarçado”.
+
+🕊️ Observer
+
+Permite que múltiplos objetos sejam notificados automaticamente quando algo muda.
+👉 Exemplo: sistema de notificações, onde vários “ouvintes” recebem atualizações de um “sujeito”.
+
+🧠 Did you know: esse padrão é a base de sistemas de eventos, como os do JavaScript.
+
+🧪 Prototype
+
+Cria novos objetos copiando um objeto existente (clone), em vez de criar do zero.
+👉 Útil quando instanciar é caro ou complexo.
+
+🧠 Did you know: esse padrão inspirou parte do modelo de herança por protótipo do JavaScript.
+
+🎨 Decorator
+
+Adiciona comportamentos extras a um objeto de forma flexível, sem alterar sua estrutura original.
+👉 Exemplo: adicionar bordas e sombras a um componente gráfico.
+
+🧠 Did you know: o BufferedReader no Java é um decorador do Reader!
+
+🧭 Strategy
+
+Define uma família de algoritmos intercambiáveis, permitindo mudar o comportamento em tempo de execução.
+👉 Exemplo: diferentes formas de calcular frete ou rotas.
+
+🧠 Did you know: Strategy evita ifs e switches enormes, tornando o código mais limpo e extensível.
+
+🔌 Adapter
+
+Permite que classes incompatíveis trabalhem juntas convertendo uma interface na outra.
+👉 Exemplo: usar um carregador de tomada americana em uma tomada brasileira.
+
+🧠 Did you know: esse padrão é tão comum que você provavelmente já usou um “adapter” físico na vida real 😄
