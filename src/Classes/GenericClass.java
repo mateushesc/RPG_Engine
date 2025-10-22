@@ -2,18 +2,21 @@ package Classes;
 
 import java.util.ArrayList;
 import java.util.List;
-//import java.util.HashMap;
-//import java.util.Map;
 import Attacks.AttackStrategy;
+import Effects.GenericEffect;
+import Weapons.GenericWeapon;
 
-// Is there any more valid status?
+// Is there any more valid status to put?
 
 public class GenericClass {
 
     protected String characterName;
 
+    protected String className = "Generic";
+    protected String description = "Generic class";
+
     protected float healthPoints;
-    protected float manaPoints;
+    protected float manaPoints; 
 
     protected int strenghPoints;
     protected int intelligencePoints;
@@ -21,10 +24,11 @@ public class GenericClass {
     protected int magicResistPoints;
     protected int agillityPoints;
 
-    protected List<String> allowedWeapons = new ArrayList<>(List.of());
+    protected int equipedWeapon = 0; // ID of equiped weapon
+
+    protected List<String> allowedWeapons = new ArrayList<>(List.of(""));
+    protected List<GenericWeapon> ownedWeapons = new ArrayList<>(List.of());
     protected List<AttackStrategy> moves = new ArrayList<>();
 
-    // protected Map<Integer, String> effects = new HashMap<>();
-    
-    protected String description;
+    protected List<GenericEffect> appliedEffects = new ArrayList<>();
 }
